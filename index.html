@@ -11,8 +11,8 @@
 <body>
     
     <div id="app">
-        <div class="container">
-            <li v-for=" mail in arrayMail"> {{mail}} </li>
+        <div v-show="this.arrayMail.length === 10" class="container">
+            <li v-for=" mail in arrayMail "> {{mail}} </li>
         </div>
     </div>
     

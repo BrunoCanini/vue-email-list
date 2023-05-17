@@ -15,9 +15,7 @@ createApp({
         for (let i = 0; i < 10; i++) {
 
             axios.get(this.apiEmail).then((risposta)=> {
-                console.log(risposta.data.response);
                 this.arrayMail.push(risposta.data.response)
-                console.log(this.arrayMail)
             })
             
         }
